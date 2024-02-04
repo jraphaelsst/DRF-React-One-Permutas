@@ -7,4 +7,4 @@ class ImovelSerializer(ModelSerializer):
     
     class Meta:
         model = Imovel
-        field = '__all__'
+        fields = '__all__'

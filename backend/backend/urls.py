@@ -7,4 +7,5 @@ urlpatterns = [
     path('corretor/', include('corretor.urls')),
     path('condominio/', include('condominio.urls')),
     path('imovel/', include('imovel.urls')),
+    path('proprietario/', include('proprietario.urls'))
 ]

@@ -1,10 +1,10 @@
 from django.urls import include, path
 from rest_framework import routers
 
-from imovel.viewsets import ImovelViewSet
+from proprietario.viewsets import ProprietarioViewSet
 
 router = routers.SimpleRouter()
-router.register(r'', ImovelViewSet, basename='imovel')
+router.register(r'', ProprietarioViewSet, basename='proprietario')
 
 
 urlpatterns = [
