@@ -1,8 +1,8 @@
 const Home = () => {
   return (
-    <div>
-      <div></div>
-    </div>
+    <>
+      <div>Login feito com sucesso!</div>
+    </>
   )
 }
 

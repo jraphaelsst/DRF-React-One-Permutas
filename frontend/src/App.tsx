@@ -3,14 +3,14 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import { GlobalCss } from './styles'
 
 import { AuthProvider } from './context/AuthContext'
-import AuthRotas from './routes/AuthRoutes'
+import Rotas from './routes'
 
 function App() {
   return (
     <Router>
       <AuthProvider>
         <GlobalCss />
-        <AuthRotas />
+        <Rotas />
       </AuthProvider>
     </Router>
   )
