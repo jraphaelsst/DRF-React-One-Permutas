@@ -42,7 +42,7 @@ export const AuthProvider = ({ children }) => {
 
       localStorage.setItem('authTokens', JSON.stringify(data))
 
-      navigate('/')
+      navigate('/home')
 
       swal.fire({
         title: 'Login Successful',
