@@ -100,54 +100,60 @@ const Navbar = ({ children }: Props) => {
       <NavbarContainer>
         <NavbarRow>
           <Item>
-            <ItemLink to="/">
+            <ItemLink to="/home">
               <ItemAnimation>Home</ItemAnimation>
             </ItemLink>
           </Item>
           <Item id="imoveis-menu">
             <NavButton>
-              <span>Imoveis</span>
+              <ItemLink to="/imoveis">
+                <span>Imóveis</span>
+              </ItemLink>
               <div id="imoveis-icon" className="">
                 <i className="fa-solid fa-arrow-down-long fa-xs"></i>
               </div>
               <DropDown id="imoveis-dropdown" className="">
                 <DropDownItem>
-                  <ItemLink to="/">Meus</ItemLink>
+                  <ItemLink to="/imoveis/meus">Meus</ItemLink>
                 </DropDownItem>
                 <DropDownItem>
-                  <ItemLink to="/">Novo</ItemLink>
+                  <ItemLink to="/imoveis/novo">Novo</ItemLink>
                 </DropDownItem>
               </DropDown>
             </NavButton>
           </Item>
           <Item id="permutas-menu">
             <NavButton>
-              <span>Permutas</span>
+              <ItemLink to="/permutas">
+                <span>Permutas</span>
+              </ItemLink>
               <div id="permutas-icon" className="">
                 <i className="fa-solid fa-arrow-down-long fa-xs"></i>
               </div>
               <DropDown id="permutas-dropdown" className="">
                 <DropDownItem>
-                  <ItemLink to="/">Minhas</ItemLink>
+                  <ItemLink to="/permutas/minhas">Minhas</ItemLink>
                 </DropDownItem>
                 <DropDownItem>
-                  <ItemLink to="/">Nova</ItemLink>
+                  <ItemLink to="/permutas/nova">Nova</ItemLink>
                 </DropDownItem>
               </DropDown>
             </NavButton>
           </Item>
           <Item id="clientes-menu">
             <NavButton>
-              <span>Clientes</span>
+              <ItemLink to="/clientes">
+                <span>Clientes</span>
+              </ItemLink>
               <div id="clientes-icon" className="">
                 <i className="fa-solid fa-arrow-down-long fa-xs"></i>
               </div>
               <DropDown id="clientes-dropdown" className="">
                 <DropDownItem>
-                  <ItemLink to="/">Meus</ItemLink>
+                  <ItemLink to="/clientes/meus">Meus</ItemLink>
                 </DropDownItem>
                 <DropDownItem>
-                  <ItemLink to="/">Novo</ItemLink>
+                  <ItemLink to="/clientes/novo">Novo</ItemLink>
                 </DropDownItem>
               </DropDown>
             </NavButton>
