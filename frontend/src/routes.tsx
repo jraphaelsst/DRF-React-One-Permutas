@@ -7,6 +7,18 @@ import Cadastro from './pages/Cadastro'
 import Landing from './pages/Landing'
 import Home from './pages/Home'
 
+import Imoveis from './pages/Imoveis'
+import NovoImovel from './pages/Imoveis/Novo'
+import MeusImoveis from './pages/Imoveis/Meus'
+
+import Permutas from './pages/Permutas'
+import MinhasPermutas from './pages/Permutas/Minhas'
+import NovaPermuta from './pages/Permutas/Nova'
+
+import Clientes from './pages/Clientes'
+import MeusClientes from './pages/Clientes/Meus'
+import NovoCliente from './pages/Clientes/Novo'
+
 const Rotas = () => {
   return (
     <>
@@ -33,6 +45,78 @@ const Rotas = () => {
           element={
             <PrivateRoute>
               <Home />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/imoveis"
+          element={
+            <PrivateRoute>
+              <Imoveis />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/imoveis/meus"
+          element={
+            <PrivateRoute>
+              <MeusImoveis />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/imoveis/novo"
+          element={
+            <PrivateRoute>
+              <NovoImovel />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/permutas"
+          element={
+            <PrivateRoute>
+              <Permutas />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/permutas/minhas"
+          element={
+            <PrivateRoute>
+              <MinhasPermutas />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/permutas/nova"
+          element={
+            <PrivateRoute>
+              <NovaPermuta />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/clientes"
+          element={
+            <PrivateRoute>
+              <Clientes />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/clientes/meus"
+          element={
+            <PrivateRoute>
+              <MeusClientes />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/clientes/novo"
+          element={
+            <PrivateRoute>
+              <NovoCliente />
             </PrivateRoute>
           }
         />
